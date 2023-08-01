@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Circular.css">
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="menu">
+            <div class="toggle">
+                <ion-icon name="share-social"></ion-icon>
+            </div>
+            <li style="--i:1;--clr:rgb(25, 118, 242);">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li style="--i:2;--clr:rgb(44, 202, 106);">
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </li>
+            <li style="--i:3;--clr:rgb(29, 160, 237);">
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li style="--i:4;--clr:rgb(226, 76, 127);">
+                <a href=""><ion-icon name="logo-dribbble"></ion-icon></a>
+            </li>
+            <li style="--i:5;--clr:rgb(14, 100, 191);">
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li style="--i:6;--clr:rgb(163, 42, 137);">
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li style="--i:7;--clr:rgb(157, 5, 23);">
+                <a href=""><ion-icon name="logo-pinterest"></ion-icon></a>
+            </li>
+            <li style="--i:8;--clr:rgb(220, 0, 0);">
+              <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+            </li>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    let toggle = document.querySelector('.toggle');
+    let menu = document.querySelector('.menu');
+    toggle.onclick = function(){
+        menu.classList.toggle('active')
+    }
+</script>
+</body>
+
+</html>

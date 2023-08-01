@@ -1,0 +1,84 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.contanier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(154, 213, 84), rgb(33, 150, 243));
+}
+
+.menu {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    color: rgb(51, 51, 51);
+    font-size: 2em;
+    cursor: pointer;
+    transition: 1.25s;
+}
+
+.menu.active .toggle {
+    transform: rotate(360deg);
+    box-shadow: 0px 6px 9px rgb(0, 0, 0, 0.15), 0px 0px 0px 2px #333, 0px 0px 0px 8px white;
+}
+
+.menu li {
+    position: absolute;
+    left: 0%;
+    list-style: none;
+    transition: 1s;
+    transform: rotate(calc(360deg/8 * var(--i)));
+    transform-origin: 160px;
+    scale: 0;
+    transition-delay: calc(0.05s * var(--i));
+}
+
+.menu.active li {
+    scale: 1;position: absolute;
+}
+
+.menu li a {
+    position: relative;
+    transform: rotate(calc(360deg/-8 * var(--i)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    color: var(--clr);
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menu li:hover a {
+    font-size: 3em;
+    box-shadow: 0px 6px 9px rgb(0, 0, 0, 0.15), 0px 0px 0px 2px var(--clr), 0px 0px 0px 8px white;
+}
+h1:hover{
+    font-size: 3em;
+}
